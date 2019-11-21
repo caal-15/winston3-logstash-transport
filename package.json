@@ -1,6 +1,6 @@
 {
-  "name": "winston3-logstash-transport",
-  "version": "1.0.1",
+  "name": "@caal-15/winston3-logstash-transport",
+  "version": "1.0.2",
   "description": "A winston@3 replacement for both winston-logstash and winston-logstash-udp to facilitate either TCP or UDP traffic to logstash",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OutofSyncStudios/winston-logstash-transport.git"
+    "url": "git+https://github.com/caal-15/winston3-logstash-transport.git"
   },
   "publishConfig": {
     "access": "public"
@@ -33,9 +33,9 @@
   "author": "Chronosis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OutofSyncStudios/winston-logstash-transport/issues"
+    "url": "https://github.com/caal-15/winston3-logstash-transport/issues"
   },
-  "homepage": "https://github.com/OutofSyncStudios/winston-logstash-transport#readme",
+  "homepage": "https://github.com/caal-15/winston3-logstash-transport#readme",
   "devDependencies": {
     "ajv": "^6.10.2",
     "chai": "^4.2.0",
