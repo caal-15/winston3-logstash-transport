@@ -225,6 +225,7 @@ class LogstashTransport extends Transport {
     });
 
     this.socket.on('connect', () => {
+      this.connectionState = 'CONNECTED';
       this.retries = 0;
     });
 
