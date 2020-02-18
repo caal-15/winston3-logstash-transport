@@ -192,7 +192,6 @@ class LogstashTransport extends Transport {
       this.socket.connect(options, () => {
         this.socket.setKeepAlive(true, 60 * 1000);
         this.announce();
-        this.connectionState = 'CONNECTED';
       });
     }
     this.hookTCPSocketEvents();
@@ -243,6 +242,7 @@ class LogstashTransport extends Transport {
         //   this.emit('error', new Error('Max retries reached, placing transport in OFFLINE/silent mode.'));
         // });
       } else if (this.connectionState !== 'CONNECTING') {
+        this.connectionState = 'CONNECTING';
         setTimeout(() => {
           this.connect();
         }, this.timeoutConnectRetries);
